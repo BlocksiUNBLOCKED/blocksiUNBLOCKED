@@ -26,7 +26,7 @@
   const footer = document.createElement("footer");
   footer.className = "site-footer";
   footer.innerHTML = `
-    <p>© ${new Date().getFullYear()} Blocksi. All rights reserved.</p>
+    <p>Pissing Off Teachers Since 2026.</p>
   `;
 
   document.body.appendChild(footer);
