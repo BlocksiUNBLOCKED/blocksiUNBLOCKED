@@ -9,6 +9,46 @@ body {
   color: #111;
 }
 
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #3f6fe5;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 36px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* PROXY PAGE */
 .proxy-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,7 +119,7 @@ body {
 .proxy-panel {
   background: white;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 16px;
 }
 
@@ -143,4 +183,13 @@ body {
   .proxy-frame-wrap {
     height: 420px;
   }
+}
+
+/* FOOTER */
+.site-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
