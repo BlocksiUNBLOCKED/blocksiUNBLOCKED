@@ -13,14 +13,11 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-
   background: #3f6fe5;
   padding: 12px 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   white-space: nowrap;
 }
 
@@ -41,7 +38,6 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-
   display: flex;
   align-items: center;
   gap: 6px;
@@ -56,11 +52,9 @@ body {
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     linear-gradient(180deg, #005bbb, #00a3e0);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   color: white;
   padding: 40px 20px;
@@ -130,4 +124,77 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 14px;
+}
+
+.proxy-page {
+  padding: 40px 20px;
+}
+
+.proxy-hero {
+  background: linear-gradient(180deg, #00a3e0, #005bbb);
+  padding: 60px 20px;
+  border-radius: 14px;
+  color: white;
+  text-align: center;
+}
+
+.proxy-hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.proxy-hero h1 {
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+.proxy-hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.proxy-input-wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.proxy-input-wrap input {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.proxy-input-wrap button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #f6b93b;
+  font-weight: bold;
+}
+
+.proxy-info {
+  display: grid;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.info-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.info-card h2 {
+  margin-top: 0;
+}
+
+.info-card p {
+  color: #555;
 }
