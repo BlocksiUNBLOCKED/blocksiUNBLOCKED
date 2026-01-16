@@ -9,7 +9,6 @@
     <nav class="nav-links">
       <a href="/gms"><i class="fa-solid fa-gamepad"></i> Games</a>
       <a href="/aps"><i class="fa-solid fa-layer-group"></i> Apps</a>
-      <a href="/prx"><i class="fa-solid fa-globe"></i> Proxy</a>
       <a href="/con"><i class="fa-solid fa-envelope"></i> Contact</a>
     </nav>
   `;
