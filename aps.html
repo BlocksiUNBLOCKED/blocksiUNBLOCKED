@@ -23,9 +23,17 @@
         <p>Use helpful tools from right in your browser.</p>
       </div>
     </section>
+    
+    <div class="apps-search">
+      <input
+        type="text"
+        id="appSearch"
+        placeholder="Search apps..."
+      />
+    </div>
 
-    <section class="apps-grid">
-      <a class="app-card" href="/aps/algcalc">
+    <section class="apps-grid" id="appsGrid">
+      <a class="app-card" data-name="algebra calculator" href="/aps/algcalc">
         <div class="app-icon">
           <i class="fa-solid fa-calculator"></i>
         </div>
@@ -37,5 +45,19 @@
   </main>
 
   <script src="/frame.js"></script>
+
+  <script>
+    const appSearch = document.getElementById("appSearch");
+    const appCards = document.querySelectorAll(".app-card");
+
+    appSearch.addEventListener("input", () => {
+      const value = appSearch.value.toLowerCase();
+      appCards.forEach(card => {
+        const name = card.dataset.name;
+        card.style.display = name.includes(value) ? "" : "none";
+      });
+    });
+  </script>
+
 </body>
 </html>
